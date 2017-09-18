@@ -1,3 +1,49 @@
+; return nil
 >()
 
->(v0
+; set variable 'a' to the value 1
+>(va1)
+
+; digital write pin 2 high
+>(w2h)
+
+; digital write pin 2 low
+(w2l)
+
+; analog write pin 9 value 123
+(a9123)
+
+; delay 1000 miliseconds
+(t1000) 
+
+---------------
+
+Switch variables to be space separated, stored lisp compressed in a 2 byte hashmap
+Bra ket integers symbols functions
+
+(
+
+)
+
+(1)
+
+1
+
+(1 2)
+
+Fish
+
+'(Quote)
+
+(Add, sub, mult, div)
+
+(set true 1)
+(set false 0)
+(set switch true)
+
+(digital-write pin switch)
+(analog-write pin value)
+
+(delay 1000)
+
+Eval
